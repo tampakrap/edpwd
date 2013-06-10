@@ -1,0 +1,10 @@
+*.pyc
+*.swp
+*.kdev4
+*.kate-swp
+/build
+/dist
+/okupy.egg-info
+.coverage
+.coveralls.yml
+/htmlcov
