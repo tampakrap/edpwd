@@ -4,8 +4,8 @@ Encrypt/Decrypt Password Library
 [![Build Status](https://travis-ci.org/tampakrap/edpwd.png?branch=master)](https://travis-ci.org/tampakrap/edpwd)
 [![Coverage Status](https://coveralls.io/repos/tampakrap/edpwd/badge.png?branch=master)](https://coveralls.io/r/tampakrap/edpwd?branch=master)
 
-A library to encrypt/decrypt passwords. It wraps up Blowfish, but does not
-require an 8-char password.
+A python library to encrypt/decrypt passwords. It wraps up Blowfish, but it
+works with any password length, without being multiple of 8.
 
 ## Examples
 
