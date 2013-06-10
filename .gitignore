@@ -4,7 +4,7 @@
 *.kate-swp
 /build
 /dist
-/okupy.egg-info
+/edpwd.egg-info
 .coverage
 .coveralls.yml
 /htmlcov
