@@ -14,9 +14,9 @@ setup(
     license="BSD",
     keywords=["password", "hash", "encryption", "decryption"],
     packages=["edpwd"],
-    data_files=[('', ['LICENSE', 'README.md'])],
+    data_files=[("", ["LICENSE", "README.md"])],
     classifiers=[
-        "Development Status :: 3 - Alpha",
+        "Development Status :: 2 - Pre-Alpha",
         "Environment :: Console",
         "Intended Audience :: Developers",
         "Natural Language :: English",
@@ -28,5 +28,8 @@ setup(
     ],
     install_requires=[
         "pycrypto>=2.6",
-    ]
+    ],
+    setup_requires=[
+        "setuptools>=0.6c11",
+    ],
 )
