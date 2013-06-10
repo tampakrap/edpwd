@@ -47,5 +47,4 @@ class EDPwdTests(TestCase):
 class RandomStringTests(TestCase):
     def test_random_string(self):
         self.assertRegexpMatches(
-                random_string(40, punctuation=True, whitespace=True),
-                '^[a-zA-Z0-9!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~ \t\n\r\x0b\x0c]{40}$')
+                random_string(40), '^[a-zA-Z0-9]{40}$')
