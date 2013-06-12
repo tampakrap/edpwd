@@ -1,13 +1,16 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
 from unittest import TestCase
 from edpwd import encrypt_password, decrypt_password, random_string
 
 class EDPwdTests(TestCase):
+    def setUp(self):
+        self.key = 'secret'
+
     def verify_password(self, password):
-        key = 'secret'
-        crypt = encrypt_password(key, password)
-        self.assertEquals(decrypt_password(key, crypt), password)
+        crypt = encrypt_password(self.key, password)
+        self.assertEquals(decrypt_password(self.key, crypt), password)
 
     def test_verify_password_less_than_8_chars(self):
         self.verify_password('test')
@@ -46,5 +49,4 @@ class EDPwdTests(TestCase):
 
 class RandomStringTests(TestCase):
     def test_random_string(self):
-        self.assertRegexpMatches(
-                random_string(40), '^[a-zA-Z0-9]{40}$')
+        self.assertRegexpMatches(random_string(40), '^[a-zA-Z0-9]{40}$')
