@@ -5,7 +5,7 @@ import os
 
 setup(
     name="edpwd",
-    version="0.0.3",
+    version="0.0.4",
     description="Encrypt/Decrypt password functions that wrap up Blowfish",
     long_description=open('README.md').read(),
     url="http://github.com/tampakrap/edpwd",
