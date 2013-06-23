@@ -7,7 +7,7 @@ install:
 branches:
   only:
     - master
-script: coverage run -m unittest tests
+script: coverage run -m unittest edpwd.tests
 after_success:
   - coveralls
 notifications:
