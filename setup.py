@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from setuptools import setup
+from distutils.core import setup
 import os
 
 setup(
@@ -14,7 +14,6 @@ setup(
     license="BSD",
     keywords=["password", "hash", "encryption", "decryption"],
     packages=["edpwd"],
-    data_files=[("", ["LICENSE", "README.md"])],
     classifiers=[
         "Development Status :: 2 - Pre-Alpha",
         "Environment :: Console",
@@ -28,8 +27,5 @@ setup(
     ],
     install_requires=[
         "pycrypto>=2.6",
-    ],
-    setup_requires=[
-        "setuptools>=0.6c11",
     ],
 )
