@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
-from distutils.core import setup
-import os
+from setuptools import setup
 
 setup(
     name="edpwd",
@@ -27,5 +26,8 @@ setup(
     ],
     install_requires=[
         "pycrypto>=2.6",
+    ],
+    setup_requires=[
+        "setuptools>=0.6c11",
     ],
 )
