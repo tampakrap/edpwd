@@ -9,16 +9,16 @@ works with any password length, without being multiple of 8.
 
 ## Examples
 
-### encrypt\_password
+### encrypt
 
-    >>> from edpwd import encrypt_password
-    >>> encrypt_password('s3cr3t_k3y', 'p4ssw0rd1!')
+    >>> from edpwd import encrypt
+    >>> encrypt('s3cr3t_k3y', 'p4ssw0rd1!')
     'cfZ3qDo2UUkLDLOe/PiBRQ=='
 
-### decrypt\_password
+### decrypt
 
-    >>> from edpwd import decrypt_password
-    >>> decrypt_password('s3cr3t_k3y', 'cfZ3qDo2UUkLDLOe/PiBRQ==')
+    >>> from edpwd import decrypt
+    >>> decrypt('s3cr3t_k3y', 'cfZ3qDo2UUkLDLOe/PiBRQ==')
     'p4ssw0rd1!'
 
 ### random\_string
