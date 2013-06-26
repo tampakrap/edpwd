@@ -4,7 +4,7 @@ from setuptools import setup
 
 setup(
     name="edpwd",
-    version="0.0.5",
+    version="0.0.6",
     description="Encrypt/Decrypt password functions that wrap up Blowfish",
     long_description=open('README.md').read(),
     url="http://github.com/tampakrap/edpwd",
