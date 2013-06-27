@@ -30,4 +30,5 @@ setup(
     setup_requires=[
         "setuptools>=0.6c11",
     ],
+    test_suite='edpwd.tests',
 )
