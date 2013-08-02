@@ -1,7 +1,6 @@
 # -*- coding: utf-8
 
-from random import choice
-import string
+import random, string
 
 def random_string(length,
         letters=True,
@@ -18,4 +17,4 @@ def random_string(length,
         chars += string.punctuation
     if whitespace:
         chars += string.whitespace
-    return ''.join([choice(chars) for i in range(length)])
+    return ''.join(random.sample(chars, length))
